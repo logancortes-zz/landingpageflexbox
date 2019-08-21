@@ -1,0 +1,68 @@
+.navbar {
+    display:flex;
+    padding:10px;
+    font-family:sans-serif;
+    width:100%;
+    justify-content:space-around;
+    
+}
+
+.topnav {
+    display:flex;
+    margin-top:7px;
+    padding: 0;
+    list-style: none;   
+}
+
+.topnav .navlinea {
+    text-decoration: none;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color:#5F646E;
+}
+
+.marca {
+    font-size: 25px;
+    color: #838383;
+}
+
+.computo {
+    color:#4780EF;
+}
+
+.dropdownLink {
+    display:none;
+}
+
+@media (max-width: 768px) {
+    ul.topnav li a.navlinea {
+        display:none;
+    }
+    
+    ul.topnav li.dropdownLink {
+        display: block;
+        position: absolute;
+        
+    }
+    
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;  
+        right:20px;
+    }
+    
+    ul.topnav.responsive {
+        flex-direction: column;
+    }
+    
+     ul.topnav.responsive li {
+        position: relative;
+        top:20px;
+        line-height: 1.5;
+    }
+    
+    ul.topnav.responsive li a.navlinea {
+        display:block;          
+    } 
+    
+   
+}
