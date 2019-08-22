@@ -56,18 +56,35 @@ header h1 {
     font-family: sans-serif;
 }
 
+.media-object {
+    display:flex;
+}
+
 .servicios {
     background-color: #908F8F;
     padding:4rem 1rem;
 }
 .img-servicios {
     border-radius: 20px;
+    display: flex;
+    margin-left: 10%;
 }
+
+
+.blurb-wrapper {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.blurb-header {
+    
+}
+
 
 
 /**********Mobile***********/
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     ul.topnav li a.navlinea {
         display:none;
     }
@@ -97,5 +114,18 @@ header h1 {
         display:block;          
     } 
     
+    .media-object {
+        display: block;
+    }
+    
+    .img-servicios {
+        margin: 0;
+        width:100%;
+    }
+    
+    .blurb-wrapper {
+        margin: 0;
+        width:100%;
+    }
    
 }
